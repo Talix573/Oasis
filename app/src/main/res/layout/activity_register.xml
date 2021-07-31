@@ -4,12 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream
-    tools:context=".main.RegisterActivity">
-=======
-    android:orientation="vertical"
-    tools:context=".RegisterFragment">
->>>>>>> Stashed changes
+    tools:context=".main.RegisterActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_logo"
@@ -125,5 +121,4 @@
             android:layout_marginBottom="20dp"/>
 
     </RelativeLayout>
-
 </LinearLayout>

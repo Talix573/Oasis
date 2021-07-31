@@ -3,11 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream
     tools:context=".main.LoginActivity">
-=======
     tools:context=".LoginFragment">
->>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/tv_title"
