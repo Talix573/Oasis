@@ -7,6 +7,7 @@
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/drawable/ic_plant.xml" value="0.2635416666666667" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/drawable/ic_water_droplet.xml" value="0.2635416666666667" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/drawable/ic_watering_can.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/font/font.xml" value="0.27760416666666665" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/activity_add_plant.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -14,12 +15,13 @@
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/fragment_gallery.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/fragment_home.xml" value="0.40764331210191085" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/fragment_message.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/fragment_plant_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/fragment_slideshow.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/nav_header.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/layout/plant_item.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/menu/drawer_menu.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/menu/main.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/kazor/Desktop/Projects/Oasis/app/src/main/res/menu/menu_main.xml" value="0.24739583333333334" />

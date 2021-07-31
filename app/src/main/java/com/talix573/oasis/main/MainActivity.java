@@ -1,4 +1,4 @@
-package com.talix573.oasis;
+package com.talix573.oasis.main;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -6,15 +6,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.room.Room;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.talix573.oasis.R;
+import com.talix573.oasis.common.AppDatabase;
+import com.talix573.oasis.common.Plant;
+import com.talix573.oasis.common.PlantDao;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     private DrawerLayout drawer;
+    private AppDatabase db;
+    private PlantDao plantDao;
+    private List<Plant> plants;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.fragment_container);
         }
+
+        // Database
+        setupDatabase();
+
     }
 
     @Override
@@ -57,6 +72,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
 
         return true;
+    }
+
+    private void setupDatabase() {
+        db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "plant").build();
+        plantDao = db.plantDao();
+        getPlants();
+    }
+
+    public List<Plant> getPlants() {
+        this.plants = plantDao.getAll();
+        return plants;
     }
 
     @Override

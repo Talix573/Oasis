@@ -15,6 +15,7 @@
     <color name="colorAccent">#A5A6F6</color>
 
     <!-- App's colours for settings -->
+    <color name="plantTitle">#3B2C2C</color>
     <color name="hydrationGood">#3BC3CC</color>
     <color name="hydrationAverage">#BA822D</color>
     <color name="hydrationBad">#CD3E3E</color>

@@ -1,14 +1,16 @@
-package com.talix573.oasis;
+package com.talix573.oasis.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AddPlantActivity extends AppCompatActivity {
+import com.talix573.oasis.R;
+
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_plant);
+        setContentView(R.layout.activity_register);
     }
 }

@@ -1,9 +1,11 @@
-package com.talix573.oasis;
+package com.talix573.oasis.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.talix573.oasis.R;
 
 public class LoginActivity extends AppCompatActivity {
 
