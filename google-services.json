@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "634975182279",
+    "project_id": "oasis-fef1a",
+    "storage_bucket": "oasis-fef1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634975182279:android:49b3a9dd978c94de060de2",
+        "android_client_info": {
+          "package_name": "com.talix573.oasis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634975182279-403l1ojppgfajaut9urcpa676r7co3mn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6gIBEL6qacvgjejipidIce7T2zDIVRlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634975182279-403l1ojppgfajaut9urcpa676r7co3mn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
