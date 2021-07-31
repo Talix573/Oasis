@@ -8,6 +8,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.room.Room;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public List<Plant> getPlants() {
-        this.plants = plantDao.getAll();
+        this.plants = plantDao.getAll().getValue();
         return plants;
     }
 
