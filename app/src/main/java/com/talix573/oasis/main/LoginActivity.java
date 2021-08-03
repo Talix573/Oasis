@@ -2,6 +2,7 @@ package com.talix573.oasis.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,4 +24,21 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
+    /*
+This is to link the textview above the Login button to the register activity once clicked
+ */
+
+    public void myMethod(View view) {
+
+        Intent myIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+        LoginActivity.this.startActivity(myIntent);
+
+    }
+
 }
+
+
+
+
+
+
