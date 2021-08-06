@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main.LoginActivity">
@@ -14,6 +15,7 @@
         android:fontFamily="@font/indigo_daisy"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
         android:layout_above="@id/tv_subtitle"/>
 
     <TextView
@@ -22,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/et_email"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Hello World"
         android:textSize="17sp" />
@@ -56,35 +58,30 @@
         android:background="@drawable/et_custom"
         android:textSize="15sp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_alignEnd="@+id/et_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="10dp"
+        android:text="Don't have an account? Create one here"
+        android:onClick="myMethod"
+        android:clickable="true"
+        android:textAlignment="center" />
+
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="17dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/btn_custom"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/login"
         android:textColor="@android:color/white" />
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_arrow_right"
-        android:layout_above="@id/swipeRight"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/swipeRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/swipe_left_for_register"
-        android:textSize="15sp"
-        android:fontFamily="@font/roboto_regular"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"/>
-
-</RelativeLayout>
+</LinearLayout>
