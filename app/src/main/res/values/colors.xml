@@ -11,6 +11,7 @@
     <!-- App's theme colours -->
     <color name="colorPrimary">#6FBF53</color>
     <color name="colorPrimaryDark">#62A949</color>
+    <color name="colorHighlight">#B5C59D</color>
     <color name="colorBackground">#C7D8AC</color>
     <color name="colorAccent">#A5A6F6</color>
 

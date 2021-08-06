@@ -6,14 +6,40 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground">
 
-    <GridView
-        android:id="@+id/grid_view"
+    <ImageView
+        android:id="@+id/header_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_plant" />
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Plant Library"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_extra_bold"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_grid_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="2"
-        tools:layout_editor_absoluteX="-88dp"
-        tools:layout_editor_absoluteY="0dp">
-    </GridView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_text"
+        android:layout_marginBottom="50dp"
+        />
 
     <TextView
         android:id="@+id/empty_notice"
@@ -28,5 +54,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_plant_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add"
+        app:backgroundTint="@color/colorPrimary"
+        app:tint="@android:color/white"/>
+
+    <Button
+        android:id="@+id/water_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Water Plant"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,9 +24,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
-    private AppDatabase db;
-    private PlantDao plantDao;
-    private List<Plant> plants;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +48,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.setCheckedItem(R.id.fragment_container);
         }
 
-        // Database
-        setupDatabase();
-
     }
 
     @Override
@@ -73,17 +67,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
 
         return true;
-    }
-
-    private void setupDatabase() {
-        db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "plant").build();
-        plantDao = db.plantDao();
-        getPlants();
-    }
-
-    public List<Plant> getPlants() {
-        this.plants = plantDao.getAll().getValue();
-        return plants;
     }
 
     @Override

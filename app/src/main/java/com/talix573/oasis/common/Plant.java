@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Entity
 public class Plant {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int id;
 
     // Name of the plant
@@ -23,8 +23,8 @@ public class Plant {
     public Date lastWatered;
 
     // The duration the plant does not require watering in milliseconds
-    @ColumnInfo(name = "watering_rate")
-    public Long wateringRate;
+    @ColumnInfo(name = "irrigationPeriod")
+    public Long irrigationPeriod;
 
     // File path of images
     @ColumnInfo(name = "img_path")
